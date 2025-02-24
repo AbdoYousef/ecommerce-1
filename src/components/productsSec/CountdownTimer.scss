@@ -1,0 +1,25 @@
+@import "../../saas/variables/variables";
+.cunt-down{
+    gap: 20px;
+    > div{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        > div:nth-child(2){
+            font-size: 36px;
+            font-weight: 700;
+            &::after{
+                content: ':';
+                font-size: 36px;
+                font-weight: 400;
+                position: absolute;
+                top: calc(50% - 18px);
+                color: $primary-red;
+                right: -20%;
+            }
+        }
+        .neglect-last::after{
+            content: '' !important;
+        }
+}
+}

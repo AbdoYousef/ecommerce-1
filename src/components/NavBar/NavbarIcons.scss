@@ -1,0 +1,122 @@
+@import "../../saas/variables/variables";
+.nav-i{
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    &:hover{
+        text-align: center;
+        color: #fff;
+        background-color: $primary-red;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    &::before{
+        width: 30px;
+        height: 30px;
+        padding-top: 3px;
+        position: relative;
+        margin: 0 auto;
+        left: calc(50% - 15px);
+        top: calc(50% - 15px);
+    }
+}
+
+.nav-i-person{
+    position: relative;
+    &:hover > div{
+        display: flex;
+    }
+
+    > div{
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        z-index: 5;
+        display: none;
+        flex-direction: column;
+        background-color: $text-bg-light-gray;
+        width: fit-content;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        a{
+            min-width: 200px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: start;
+            gap: 15px;
+            padding: 10px;
+            color: $primary-white;
+            text-decoration: none;
+            font-size: 16px;
+            p{
+                margin: 0;
+            }
+            &:hover{
+                background-color: $secondary-light-gray;
+                color: $primary-red;
+            }
+            &:nth-child(5):hover{
+                border-radius: 0 0 10px 10px;
+                -webkit-border-radius: 0 0 10px 10px;
+                -moz-border-radius: 0 0 10px 10px;
+                -ms-border-radius: 0 0 10px 10px;
+                -o-border-radius: 0 0 10px 10px;
+}
+            &:nth-child(1):hover{
+                border-radius: 10px 10px 0 0;
+                -webkit-border-radius: 10px 10px 0 0;
+                -moz-border-radius: 10px 10px 0 0;
+                -ms-border-radius: 10px 10px 0 0;
+                -o-border-radius: 10px 10px 0 0;
+}
+        }
+    }
+}
+
+.nav-i-heart,
+.nav-i-cart{
+    position: relative;
+    &:hover::after,
+    &:hover::after{
+        background-color: $primary-white;
+        color: $primary-red;
+    }
+}
+.nav-i-heart::after,
+.nav-i-cart::after{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1; 
+    content: '4';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0%;
+    right: 0;
+    font-size: 14px;
+    background-color: $primary-red;
+    color: $primary-white;
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.nav-i-cart::after{
+    content: '2';
+}

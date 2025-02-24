@@ -1,0 +1,61 @@
+@import "../../saas/variables/variables";
+
+.new-arr-grid{
+    display: grid;
+    grid-auto-rows: minmax(200px, auto);
+    grid-auto-columns: minmax(200px, auto);
+    // grid-template-columns: repeat(4, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:                           /*this is the first row  takes 5 columns*/
+    "lph lph rtop rtop"
+    "lph lph rl rr"
+    ;
+    gap: 10px;
+    .gr-1{
+        grid-area: lph;
+    }
+    .gr-2{
+        grid-area: rtop;
+    }
+    .gr-3{
+        grid-area: rr;
+    }
+    .gr-4{
+        grid-area: rl;
+    }
+}
+
+// services.scss
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 40px auto;
+    .service-item {
+        text-align: center;
+        max-width: 200px;
+        margin: 0 10px;
+        i{
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: 0 auto 10px;
+            background-color: $primary-black;
+            border-radius: 50%;
+            color: $primary-white;
+            line-height: 50px;
+            text-align: center;
+            font-size: 24px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 0.9em;
+            color: #666;
+        }
+    }
+}
