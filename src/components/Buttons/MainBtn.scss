@@ -1,4 +1,4 @@
-@import "../../saas/variables/variables";
+@use "../../saas/variables/variables" as *;
 .main-btn-sty{
     width: 100%;
     display: flex;

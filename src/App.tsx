@@ -5,7 +5,7 @@
 // import Product from './pages/Product/Product';
 // import Cart from './pages/Cart/Cart';
 // import Checkout from './pages/Checkout/Checkout';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './App.scss';
 import Preloader from './components/preLoader/Preloader';
 import { NavBar } from './components/NavBar/NavBar'

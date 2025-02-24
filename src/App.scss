@@ -1,4 +1,4 @@
-@import "../src/saas/layout/all-sec";
+@use "../src/saas/layout/all-sec" as *;
 body{
     overflow-x: hidden;
     width: 100%;

@@ -52,7 +52,7 @@ export const NewArrival: React.FC<Props> = function(
             </div>
             <div className='services-container'>
                 <div className="service-item">
-                    <i className="fa-solid fa-truck-fast" style={{color: "#ffffff;"}}></i>
+                    <i className="fa-solid fa-truck-fast"></i>
                     <h3>FREE AND FAST DELIVERY</h3>
                     <p>Free delivery for all orders over $140</p>
                 </div>

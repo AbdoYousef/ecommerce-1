@@ -1,4 +1,4 @@
-@import "../../saas/variables/variables";
+@use "../../saas/variables/variables" as *;
 .side-carousel{
     display: flex;
     width: 100%;

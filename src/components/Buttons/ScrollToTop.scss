@@ -1,4 +1,4 @@
-@import "../../saas/variables/variables";
+@use "../../saas/variables/variables" as *;
 
 .scroll-to-top {
     position: fixed;
