@@ -1,0 +1,24 @@
+@import "../../saas/variables/variables";
+.main-btn-sty{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .main-btn{
+    background-color: $primary-red;
+    color: $primary-white;
+    padding: 6px 18px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    &:hover{
+        transform: scale(1.05);
+        background-color: $primary-red;
+        color: $primary-white;
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+}
+}}

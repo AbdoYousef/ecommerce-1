@@ -1,0 +1,30 @@
+@import "../../saas/variables/variables";
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  
+    &__button {
+      background-color: $secondary-light-gray;
+      border: none;
+      border-radius: 50%;
+      color: $primary-black;
+      cursor: pointer;
+      font-size: 16px;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s, transform 0.3s;
+  
+      &:hover {
+        background-color: $primary-red;
+        color: $primary-white;
+        transform: scale(1.1);
+      }
+    }
+  }

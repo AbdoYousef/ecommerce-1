@@ -1,0 +1,52 @@
+@import "../../saas/variables/variables";
+
+.new-arrival-card{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    // gap: 10px;
+    position: relative;
+    color: $primary-white;
+    background-color: $primary-black;
+    padding: 20px;
+    img{
+        width: auto;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+    h3,
+    p,
+    a{
+        z-index: 3;
+    }
+    p{
+        margin-bottom: 0;
+        font-size: 14px;
+        width: 70%;
+    }
+    a{
+        color: $primary-white;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+    &:hover{
+        text-decoration-color: $primary-red;
+        color: $primary-red;
+        -moz-text-decoration-color: $primary-red;
+        transform: translateX(10px);
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        -o-transform: translateX(10px);
+}
+    }
+}
+

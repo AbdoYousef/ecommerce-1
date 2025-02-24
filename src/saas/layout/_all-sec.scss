@@ -1,0 +1,55 @@
+@import "../../saas/variables/variables";
+.all-sec{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.sec-head{
+    color: $primary-red;
+    position: relative;
+    &::before{
+        content: "";
+        position: relative;
+        left: 0;
+        margin-right: 5px;
+        width: 5px;
+        height: 100%;
+        border: 5px solid $primary-red;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+    }
+
+}
+.sec-topic{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > div{
+        display: flex;
+        align-items: center;
+    }
+    .sec-topic-lef{
+        width: 80%;
+        justify-content: space-between;
+    }
+}
+.arrows-1{
+    &::before{
+        background-color: $text-bg-light-gray-1;
+        border-radius: 50%;
+        padding: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+}
+    &:hover::before{
+        background-color: $primary-red;
+        color: $primary-white;
+    }
+}
